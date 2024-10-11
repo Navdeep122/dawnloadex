@@ -1,0 +1,137 @@
+﻿body {
+    font-family: 'Poppins', sans-serif;
+    background: #f7f7f7;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 259px;
+    max-width: 250px;
+    background: #236a7c;
+    color: #fff;
+    transition: all 0.3s;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+    #sidebar.active {
+        margin-left: -250px;
+    }
+
+    #sidebar .sidebar-header {
+        padding: 20px;
+        background: #31708f;
+    }
+
+        #sidebar .sidebar-header h3 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        #sidebar .sidebar-header p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+
+    #sidebar ul.components {
+        padding: 1px 0;
+    }
+
+    #sidebar ul li a {
+        padding: 15px 20px;
+        font-size: 1.1em;
+        display: block;
+        color: #fff;
+        text-decoration: none;
+    }
+
+        #sidebar ul li a:hover {
+            background: #0056b3;
+            text-decoration: none;
+        }
+
+    #sidebar ul li.active > a, a[aria-expanded="true"] {
+    }
+
+.sidebar-footer {
+    padding: 20px;
+    background: #0069d9;
+}
+
+    .sidebar-footer h4 {
+        color: #fff;
+        font-size: 1.1em;
+    }
+
+    .sidebar-footer .form-control {
+        margin-top: 10px;
+        border: none;
+        border-radius: 0;
+    }
+
+    .sidebar-footer .copyright {
+        margin-top: 10px;
+        color: #ccc;
+        font-size: 0.9em;
+    }
+
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+#sidebarCollapse {
+    width: 40px;
+    height: 40px;
+    background: #007bff;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+}
+
+    #sidebarCollapse span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        #sidebar ul li span
+
+{
+    #sidebarCollapse i
+
+{
+    font-size: 1.8em;
+}
+
+.sub-menu {
+    display: none;
+    padding-left: 20px; /* Indentation for sub-menu */
+}
+
+.list-unstyled li.active > .sub-menu {
+    display: block;
+}
+/* Default state: text is visible */
+#sidebar ul li span {
+    display: inline;
+}
+
+/* When the sidebar is active (collapsed), hide the text */
+#sidebar.active ul li span {
+    display: none;
+}
+
+#sidebar {
+    transition: all 0.3s;
+}
+
+    #sidebar.active {
+        width: 50px;
+    }
